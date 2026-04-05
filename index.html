@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- para hacer comentarios solo es ctrl k c  -->
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+   <link
+      href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+
+
+   <link rel="stylesheet" href="style.css">
+
+   <title>SOS-Info</title>
+
+</head>
+
+<body>
+   <!-- HEADER target="blank" es para abrir una nueva pestaña se usa generalmente para cuando  entras
+    las etiquetas "a" son clickeables -->
+
+   <header class="index-header-general">
+      <!--las listas desordenadas UL se usan para la barra de navegacion  generalmente -->
+      <nav class="index-header-ul">
+         <img src="images/nene.png" alt="logo de la pagina">
+         <ul class="section-link">
+            <li><a href="./pages/home.html">home</a></li>
+            <li><a href="./pages/nosotros.html">nosotros</a></li>
+            <li><a href="./pages/servicios.html">servicios</a></li>
+            <li><a href="./pages/ubicacion.html">ubicacion</a></li>
+            <li><a href="./pages/socorristas.html" target="_blank">socorristas</a></li>
+         </ul>
+      </nav>
+
+      <!-- principal-->
+
+      <section class="header-section-h2">
+         <h2>Socorristas</h2>
+      </section>
+   </header>
+
+
+   <main>
+      <h1 class="main-h1">Nuestro Trabajo</h1>
+      <p> Somos un equipo profesional dedicado a tu seguridad en la playa. Información, prevención y asistencia para
+         que
+         disfrutes sin riesgos.</p>
+
+
+      <section class="main-h1-video">
+         <video autoplay muted controls loop playsinline src="./videos/nosahogamos.mp4"></video>
+      </section>
+
+
+
+      <div class="tres-cuadrados">
+
+         <div class="tarjeta">
+            <img src="images/romeo.jpeg" alt="vehiculo de salvamento">
+            <p>Vehículos del dispositivo de salvamento y socorrismo</p>
+         </div>
+
+         <div class="tarjeta">
+            <img src="images/caso.jpeg" alt="intervencion">
+            <p>Intervenciones</p>
+         </div>
+
+         <div class="tarjeta">
+            <img src="images/formaciones.jpeg" alt="formaciones del equipo">
+            <p>Formaciones prácticas del equipo de salvamento</p>
+         </div>
+
+      </div>
+
+
+      <!-- pdf pruebas , video de las pruebas y mapa de donde se realizan -->
+      <section class="formulario">
+         <h2>Forma parte de nuestro Equipo</h2>
+         <div class="info-pruebas-general">
+
+            <div class="pdf-pruebas">
+               <a href="documento/proceso_de_seleccion_Socorristas_de_Barcelona_2023 (3).pdf">
+                  <img src="images/ProcesoSeleccion.png" alt="manual de pruebas fisica"></a>
+                   <p> Proceso de Seleccion</p>
+               </div>
+                  
+
+            <div class="video-pruebas">
+               <video src="videos/nosahogamos.mp4" controls loop playsinline></video>
+               <p> video pruebas fisicas</p>
+            </div>
+
+            <div class="mapa">
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.4880126136495!2d2.19528177450449!3d41.385207096132795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a31acd9b7ac9%3A0x307c045bbb06f375!2sPlaya%20Somorrostro!5e0!3m2!1ses!2ses!4v1772474341206!5m2!1ses!2ses"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+               <p>donde haremos las pruebas </p>
+            </div>
+         </div>
+
+
+         <!--formulario de inscripcion ACTION  es a donde vamos a mandar la informacion de este formulario METHODO es como mandamos la informacion POST envia la informacion de manera invisible mas por cuestiones de seguridad  -->
+
+         <form action="form.php" method="POST">
+
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" placeholder=" Martina">
+
+            <label for="apellido">Apellido</label>
+            <input id="apellido" type="text" placeholder=" Perez">
+
+            <label for="dni">Dni</label>
+            <input id="dni" type="text" placeholder="66334415A">
+
+            <label for="email">Email</label>
+            <input id="email" type="text" placeholder="ADJDHADSN@hotmail.com">
+
+            <label for="telefono">Telefono</label>
+            <input id="telefono" type="text" placeholder=" telefono"> 
+
+            
+            <p>Comentarios</p>
+            <textarea name="" id="" cols="" rows="10"></textarea>
+
+
+            <p>Acepta los terminos y condiciones</p>
+            <input type="checkbox" name="" id="">
+
+
+            <!--para que se envie toda esta informacion es necesario crear el imput  SUBmit-->
+
+            <input type="submit" value="enviar formulario">
+
+            <!-- /*<button type="submit">Enviar</button>*/ -->
+         </form>
+      </section>
+
+
+      <!-- INFORMACIÓN Y CONSEJOS -->
+      <section class="info">
+
+         <h2>Información y Consejos Antes de ir a la Playa</h2>
+
+        <div class="info-playa-general">      <!--  esto agrupa la informacion de ban,vienyProno -->
+
+            <div class="card-viento">
+
+               <!-- navegacion a paginas externas usamos el TARGET con el valor BLANK va abrir otra ventana fuera de nuestro proyecto  ademas se usa el NOREFERERpara que no puedan manipular con codigo externo  -->
+
+               <a href="https://www.windy.com/?41.371,2.163,5,m:eOGagAn" target="_blank" rel="noreferrer">Direccion del
+                  viento</a>
+            </div>
+
+            <div class="card-pronostico">
+               <a href="https://www.todosurf.com/prevision/barcelona-boya-exterior-spot40.htm" target="_blank"
+                  rel="noreferrer">Pronostico</a>
+            </div>
+
+            <div class="card-bandera">
+               <a href="https://www.barcelona.cat/es/que-hacer-en-bcn/banos-y-playas" target="_blank"
+                  rel="noreferrer">Bandera</a>
+            </div>
+
+         </div>
+
+      </section>
+   </main>
+
+
+
+
+   <!-- FOOTER -->
+   <footer>
+      <h4>Nuestras Redes <br>¡Seguinos!</h4>
+      <ul>
+         <li><a href="#">Instagram</a></li>
+         <li><a href="#">Facebook</a></li>
+         <li><a href="#">TikTok</a></li>
+      </ul>
+
+   </footer>
+   
+   <p>Diseñado por AleeMoreira</p>
+
+
+
+</body>
+
+</html>
