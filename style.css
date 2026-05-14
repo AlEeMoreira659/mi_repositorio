@@ -1,6 +1,7 @@
 /* ================== ESTILOS GENERALES ================*/
 * {
     font-family: "Poppins", sans-serif;
+
 }
 
 html,
@@ -18,97 +19,64 @@ p {
     /* aca esta el color de todos los parrafos generales */
     text-align: center;
     margin-top: 0px;
-    color: #e60d93;
+    color: #747172;
 }
 
-
 /*======================header=====================*/
+/* barra de navegacion*/
 
-.index-header-ul {
+.navbar {
     background-color: #003049;
+    color: white;
     /* azul oscuro */
     padding: 9px;
 }
 
-.index-header-ul {
-
-    display: flex;
-    /* pone logo y menú en fila */
-    justify-content: space-between;
-    align-items: center;
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #ffffff;
 }
 
-.index-header-ul img {
-    width: 50px;
-    /* tamaño del logo  nene*/
+/* personalizo los items de la barra de navegacion enlaces */
+
+.navbar.navbar-toggler,
+.navbar navbar-toggler-icon,
+.navbar span {
+    color: #ffffff;
+    border-color: white;
 }
 
-.section-link {
-    font-size: 11px;
-    /* tamaño de la letra */
-    list-style: none;
-    /* saca los puntitos */
-    display: flex;
-    gap: 20px;
-    /* separación entre enlaces */
+/*cuando paso por arriba de las letras las pone grises*/
+.navbar .nav-link:hover {
+    color: grey;
 }
 
-.section-link a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+/* borra el borde blanco de la hamburguesa*/
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
 }
-
-
-/* HEADER RESPONSIVE */
-
-@media (max-width: 600px) {
-
-    .index-header-ul {
-        flex-direction: column; /* menú debajo del logo */
-        gap: 10px; /* separación */
-        padding: 15px;
-    }
-
-    .section-link {
-        flex-direction: column;
-        /* menú vertical */
-        gap: 0px;
-        align-items: center;
-        /* centrado */
-        padding: 0;
-        margin: 0;
-    }
-
-    .section-link a {
-        font-size: 7px;
-        /* más legible en móvil */
-    }
-
-    .index-header-ul img {
-        width: 60px;
-        /* un poco más grande */
-    }
-}
-
 
 /* principal (TÍTULO + VIDEO)*/
 
+/* esto es para el titulo socorristas */
 .header-section-h2 {
     text-align: center;
-    padding: 20px;
+    font-size: 32px;
     color: white;
-    font-size: 80px;
-
+    padding: 20px;
 }
 
-.header-section-h2 {
-    background-image: url(./images/ingreso2015.jpeg);
-    height: 90vh;
 
-    background-repeat: no-repeat;
+/* esto es para la imagen */
+.header-section-h2 {
+    width: 100%;
+    height: 90vh;
+    background-image: url(./images/ingreso2015.jpeg);
+    background-position: center center;
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed; /*cuando bajola imagen baja*/
 
 }
 
@@ -333,26 +301,42 @@ form input[type="submit"] {
 
 h4 {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 1px;
     color: white
 }
 
 footer {
     background-color: #003049;
-    padding: px;
+    padding: 0px 0;
     text-align: center;
+    height: auto;
 }
 
 footer ul {
     list-style: none;
+    /* quita los puntos de la lista */
     padding: 0;
+    /* elimina el espacio interno del ul */
+    display: flex;
+    /* coloca los elementos en fila uno al lado del otro */
+    gap: 20px;
+    /* espacio uniforme entre enlaces */
+    justify-content: center;
+    /* centra los enlaces horizontalmente */
 }
 
 footer li {
-    margin: 5px 0;
+    margin: 1px 0;
 }
 
 footer a {
     color: white;
     text-decoration: none;
+}
+
+footer h4,
+footer ul,
+footer p {
+    margin: 1px 0;
+    padding: 0;
 }
