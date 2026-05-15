@@ -63,7 +63,7 @@ p {
 /* esto es para el titulo socorristas */
 .header-section-h2 {
     text-align: center;
-    font-size: 32px;
+    font-size: 40px;
     color: white;
     padding: 20px;
 }
@@ -155,12 +155,13 @@ p {
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    margin: 50px ;
 }
 
 /* responsive se va adaptar a las pantallas  */
-@media (max-width: 900px) {
+@media (max-width: 990px) {
     .tres-cuadrados {
-        grid-template-columns: repeat(2, 300px);
+        grid-template-columns: repeat(1, 300px);
     }
 }
 
@@ -199,6 +200,7 @@ p {
     text-align: center;
     margin-bottom: 20px;
     color: #003049;
+    margin: 0px;
 }
 
 .info-pruebas-general {
@@ -208,16 +210,19 @@ p {
     gap: 20px;
     margin-top: 20px;
 }
-
+/*query esto es para tablets 
+cuando se achica la pantallas va a quedar solo una imagen */
 @media (max-width: 900px) {
     .info-pruebas-general {
-        grid-template-columns: repeat(2, 300px);
+        grid-template-columns: repeat(1, 300px);
+        justify-content: center ;
     }
 }
-
+/*query esto es para movil 
+cuando se achica la pantallas va a quedar solo una imagen*/
 @media (max-width: 600px) {
     .info-pruebas-general {
-        grid-template-columns: 300px;
+        grid-template-columns: repeat(1, 300px);
         justify-content: center;
         /* CENTRA LA TARJETA */
     }
