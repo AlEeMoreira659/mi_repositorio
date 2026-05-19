@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* ================== ESTILOS GENERALES ================*/
-/* ================== ESTILOS GENERALES ================*/
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -164,6 +163,12 @@ footer a i:hover {
   transform: scale(1.2);
 }
 
+@media (max-width: 480px) {
+  footer p {
+    font-size: 12px;
+    text-align: center;
+  }
+}
 /* ========= FORMULARIO + PDF + VIDEO + MAPA =========================== */
 .formulario h2 {
   text-align: center;
@@ -232,29 +237,31 @@ footer a i:hover {
   font-weight: bold;
 }
 
-/* =========================== NOSOTROS =========================== */
 .header-video-nosotros {
   position: relative;
   width: 100%;
   height: 90vh;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
+/* VIDEO */
 .header-video-nosotros video {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: translate(-50%, -50%);
-  z-index: -1;
+  z-index: 1;
 }
 
+/* TEXTO */
 .header-video-nosotros h1 {
+  position: relative;
+  z-index: 2;
   color: white;
   font-size: 60px;
   text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);

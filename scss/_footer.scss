@@ -59,3 +59,9 @@ footer a i:hover {
   color: #d5d5d2;
   transform: scale(1.2);
 }
+@media (max-width: 480px) {
+  footer p {
+    font-size: 12px;
+    text-align: center;
+  }
+}
