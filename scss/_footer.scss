@@ -1,0 +1,61 @@
+/* =========================== FOOTER =========================== */
+
+h4 {
+  text-align: center;
+  margin-top: 5px;
+  color: white;
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+footer {
+  background-color: #003049;
+  padding: 0;
+  text-align: center;
+  height: auto;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+footer li {
+  margin: 1px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer h4,
+footer ul,
+footer p {
+  margin: 1px 0;
+  padding: 0;
+}
+
+footer + p {
+  max-width: 300px;
+  margin: 10px auto;
+  font-size: 12px;
+  font-weight: 300;
+  color: #666;
+  text-align: center;
+}
+
+footer a i {
+  font-size: 10px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+footer a i:hover {
+  color: #d5d5d2;
+  transform: scale(1.2);
+}

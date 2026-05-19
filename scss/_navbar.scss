@@ -1,0 +1,33 @@
+/*====================== NAVBAR =====================*/
+
+.navbar {
+  background-color: #003049;
+  color: white;
+  padding: 9px;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #ffffff;
+}
+
+.navbar.navbar-toggler,
+.navbar navbar-toggler-icon,
+.navbar span {
+  color: #ffffff;
+  border-color: white;
+}
+
+.navbar .nav-link:hover {
+  color: grey;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-logo img {
+  height: 40px;
+}

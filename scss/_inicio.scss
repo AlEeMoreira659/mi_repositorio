@@ -1,0 +1,71 @@
+/* ========= FORMULARIO + PDF + VIDEO + MAPA =========================== */
+
+.formulario h2 {
+  text-align: center;
+  color: #003049;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.info-pruebas-general {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  .info-pruebas-general {
+    grid-template-columns: repeat(1, 300px);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .info-pruebas-general {
+    grid-template-columns: repeat(1, 300px);
+    justify-content: center;
+  }
+}
+
+.pdf-pruebas,
+.video-pruebas,
+.mapa {
+  width: 300px;
+  text-align: center;
+}
+
+.pdf-pruebas img,
+.video-pruebas video,
+.mapa iframe {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* =========================== INFO Y CONSEJOS=========================== */
+
+.info {
+  text-align: center;
+  padding: 20px;
+}
+
+.info-playa-general {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.info-playa-general div {
+  background-color: #faf8f8;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.info-playa-general a {
+  text-decoration: none;
+  color: #003049;
+  font-weight: bold;
+}

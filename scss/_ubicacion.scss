@@ -1,0 +1,127 @@
+/* =========================== UBICACION =========================== */
+
+.header-section-h2-ubicacion {
+  width: 100%;
+  min-height: 90vh;
+  background-image: url("../assets/images/4.png");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+
+.ubicacion-overlay-content {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  z-index: 5;
+}
+
+.ubicacion-contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.ubicacion-texto {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(6px);
+  padding: 25px;
+  border-radius: 12px;
+  color: white;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.btn-ver-mapa {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 10px;
+  background: rgba(131, 113, 177, 0.18);
+  backdrop-filter: blur(6px);
+  color: rgba(75, 3, 3, 0.603);
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+}
+
+.btn-ver-mapa:hover {
+  background: rgba(255, 255, 255, 0.32);
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+  .header-section-h2-ubicacion {
+    min-height: 100vh;
+    font-size: 32px;
+    padding: 40px 20px;
+  }
+
+  .ubicacion-overlay-content {
+    width: 95%;
+    bottom: 20px;
+  }
+
+  .ubicacion-contenido {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .ubicacion-texto {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .btn-ver-mapa {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* MOVIL */
+@media (max-width: 576px) {
+  .header-section-h2-ubicacion {
+    min-height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-size: 24px;
+    background-attachment: scroll;
+  }
+
+  .ubicacion-overlay-content {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .ubicacion-contenido {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .ubicacion-texto {
+    font-size: 15px;
+    line-height: 1.4;
+    padding: 18px;
+  }
+
+  .btn-ver-mapa {
+    width: 100%;
+    font-size: 15px;
+    padding: 12px;
+    text-align: center;
+  }
+}
