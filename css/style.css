@@ -57,6 +57,10 @@ p {
     outline: none;
     box-shadow: none;
 }
+.nav-logo img {
+    height: 40px;
+}
+
 
 /* principal (TÍTULO + VIDEO)*/
 
@@ -190,29 +194,7 @@ cuando se achica la pantallas va a quedar solo una imagen*/
 
 
 
-/* ===========================FORMULARIO =========================== */
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 450px;
-    margin: 20px auto;
-
-}
-
-form input {
-    padding: 8px;
-
-}
-
-form input[type="submit"] {
-    /* esto le va a dar el color al boton de enviar formulario solamente */
-    padding: 10px;
-    background-color: #003049;
-    color: white;
-    border: none;
-}
 
 
 /* =========================== INFO Y CONSEJOS=========================== */
@@ -231,7 +213,7 @@ form input[type="submit"] {
 }
 
 .info-playa-general div {
-    background-color: #e0e0e0;
+    background-color: #faf8f8;
     padding: 15px;
     border-radius: 10px;
 }
@@ -252,7 +234,7 @@ h4 {
     color: white;
     font-size: 10px;        /* más chico */
     font-weight: 300;       /* más fino */
-    letter-spacing: 1px;    /* más elegante */
+    letter-spacing: 1px;   
 }
 
 
@@ -366,25 +348,277 @@ footer a i:hover {
     background-attachment: fixed; /*cuando bajola imagen baja*/
 
 }
+/* ===========================FORMULARIO =========================== */
+
+/* Fondo tipo Socorristas */
+/* Fondo tipo Socorristas */
+/* ELIMINA MÁRGENES DEL NAVEGADOR */
+
+
+/* HERO */
+.formulario-empleo h1 {
+    width: 60%;
+    text-align: center;
+    margin: 0;
+}
+
+.formulario-hero {
+    position: relative;
+    width: 100%; /* ocupa todo el ancho visible */
+    min-height: 90vh;
+
+    background-image: url("../assets/images/17.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* OVERLAY */
+.overlay-socorristas {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 1;
+}
+
+/* CAJA FORMULARIO */
+.formulario-empleo {
+    position: relative;
+    z-index: 2;
+
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(6px);
+
+    padding: 40px;
+    border-radius: 12px;
+
+    width: 500px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+/* FORMULARIO */
+.formulario-empleo form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+/* INPUTS */
+.formulario-empleo input,
+.formulario-empleo textarea {
+    width: 100%;
+    padding: 5px;
+
+    border-radius: 6px;
+    border: none;
+
+    box-sizing: border-box;
+}
+
+/* CHECKBOX + TEXTO */
+
+/* evita que el checkbox se agrande */
+.terminos input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+/* BOTÓN */
+.formulario-empleo input[type="submit"] {
+    background: #003049;
+    color: white;
+
+    cursor: pointer;
+    font-size: 14px;
+
+    padding: 10px;
+    border-radius: 6px;
+
+    transition: 0.3s ease;
+}
+
+.formulario-empleo input[type="submit"]:hover {
+    background: #014a73;
+}
 /*=========================================== ubicacion*/ 
 
-.header-section-h2-ubicacion{
+/*=========================================== UBICACION */
+
+/* HEADER */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.header-section-h2-ubicacion {
+    width: 100%;
+    min-height: 90vh;
+
+    background-image: url("../assets/images/4.png");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
     font-size: 40px;
     color: white;
     padding: 20px;
 
+    position: relative;
 }
 
-.header-section-h2-ubicacion{
+/* CONTENIDO SOBRE LA IMAGEN */
+.ubicacion-overlay-content {
+    position: absolute;
+    bottom: 40px;
 
-    width: 100%;
-    height: 90vh;
-     background-image: url("../assets/images/4.png");
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed; /*cuando bajola imagen baja*/
+    left: 50%;
+    transform: translateX(-50%);
 
+    width: 90%;
+    z-index: 5;
+}
+
+/* GRID */
+.ubicacion-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* TEXTO */
+.ubicacion-texto {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(6px);
+
+    padding: 25px;
+    border-radius: 12px;
+
+    color: white;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+/* BOTÓN */
+.btn-ver-mapa {
+    display: inline-block;
+
+    padding: 12px 24px;
+    border-radius: 10px;
+
+    background: rgba(131, 113, 177, 0.18);
+    backdrop-filter: blur(6px);
+
+    color: rgba(75, 3, 3, 0.603);
+
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+
+    transition: 0.3s ease;
+}
+
+.btn-ver-mapa:hover {
+    background: rgba(255, 255, 255, 0.32);
+}
+
+/*=========================================== TABLET */
+
+@media (max-width: 992px) {
+
+    .header-section-h2-ubicacion {
+        min-height: 100vh;
+        font-size: 32px;
+        padding: 40px 20px;
+    }
+
+    .ubicacion-overlay-content {
+        width: 95%;
+        bottom: 20px;
+    }
+
+    .ubicacion-contenido {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .ubicacion-texto {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .btn-ver-mapa {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*=========================================== MOVIL */
+
+@media (max-width: 576px) {
+
+    .header-section-h2-ubicacion {
+
+        min-height: auto;
+
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        font-size: 24px;
+
+        background-attachment: scroll; /* evita bugs en móvil */
+    }
+
+    .ubicacion-overlay-content {
+        position: relative;
+
+        bottom: auto;
+        left: auto;
+
+        transform: none;
+
+        width: 100%;
+        padding: 15px;
+    }
+
+    .ubicacion-contenido {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .ubicacion-texto {
+        font-size: 15px;
+        line-height: 1.4;
+
+        padding: 18px;
+    }
+
+    .btn-ver-mapa {
+
+        width: 100%;
+
+        font-size: 15px;
+
+        padding: 12px;
+        text-align: center;
+    }
 }
 
 /*===================================================socorristas*/
@@ -413,7 +647,7 @@ footer a i:hover {
     z-index: 1;
 }
 
-/* formulario */
+
 /* formulario */
 .formulario-socorristas {
     position: relative;
